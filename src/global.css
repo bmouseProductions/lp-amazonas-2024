@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff
+}
+
+.banner {
+    background-image: url(./assets/images/banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 30px 20px rgba(101, 233, 57, 0.319);
+}
+
+@media screen and (min-width:768px) {
+    .banner {
+        background-image: url(./assets/images/banner.webp);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        box-shadow: 0px 0px 30px 20px rgba(101, 233, 57, 0.319);
+    }
+}
+
+@media screen and (max-width:768px){
+    .swiper-button-prev, .swiper-button-next{
+        display: none !important;
+    }
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: #22c55e !important;
+}
+
+.swiper-pagination-bullet{
+    background: #22c55e !important;
+}
+
+.box-icons{
+    box-shadow: 0px 0px 20px 10px rgba(101, 233, 57, 0.319);
+}
+
+/* styles.css */
+@keyframes progressAnimation {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 45%;
+    }
+}
+  
+.progress-bar.animate {
+    background-color: #39cb6e;
+    animation: progressAnimation 1.5s forwards; /* Duração da animação */
+}
+
+.bg-pagar {
+    background-image: url(./assets/images/bg-pagar.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+
+.bg-footer {
+    background-image: url(./assets/images/bg-footer.webp);
+}
